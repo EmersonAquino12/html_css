@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>usando fontes externas</title>
+    <style>
+        @font-face{
+            font-family: 'glow_night';
+            src: url(glow_night/GLOW\ NIGHT.otf) format(opentype);
+        }
+        /*      teste feito não pegou ttf no edge mas pegou o otf
+        
+           tipos de formato()
+           opentype(otf)
+           trutype(ttf)
+           ebedded-opentype
+           truetype-aat (apple advanced typography)
+           svg
+        */
+        body{
+            font-family:'glow_night' ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Títulos</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate blanditiis non aperiam dicta. Ducimus explicabo, nam quae magni minima aliquid soluta libero impedit. Sunt magnam amet, tenetur unde cum explicabo?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores suscipit dignissimos ducimus qui ab placeat dolorum, molestias culpa quae nobis velit officia! Perferendis illum, alias earum ad quae distinctio! Repudiandae!</p>
+</body>
+</html>

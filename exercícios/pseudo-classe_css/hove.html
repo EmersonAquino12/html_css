@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplos de hover</title>
+   <style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+    }
+    h1{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    h1:hover{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: blueviolet;
+    }
+    div > p{
+        display: none;
+       
+    }
+    div:hover > p{
+        display: block;
+        
+    }
+    p:hover{
+        background-color: rgb(253, 6, 6);
+        color: white;
+        height: 30px;
+    }
+   </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>passe o mouse sobre o texto abaixo</p>
+    <div>
+        passe o mouse aqui
+        <p>achou</p>
+    </div>
+</body>
+</html>

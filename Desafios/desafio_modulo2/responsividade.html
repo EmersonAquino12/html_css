@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsividade</title>
+</head>
+<style>
+    body{
+        background-color: aqua;
+    }
+    main{
+        background-color: white;
+        min-width: 320px;
+        max-width: 800px;
+        margin: auto;
+    }
+     picture > img{
+        width: 100%;   /* com essa linha eu consigo adaptar a imagem  de acordo com a proporção da tela*/
+    }
+    main > img{
+        width: 330px;
+        display: block;
+        margin: auto;
+    }
+</style>
+<body>
+    <main>
+        <h1>testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum totam minus quasi numquam alias qui quibusdam odio placeat deserunt laborum voluptatibus earum consequatur, neque, eligendi quo dignissimos modi omnis quis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse vero ab dignissimos corrupti optio totam mollitia? Quisquam tempora sapiente unde accusamus aut laborum alias distinctio sint, nobis eveniet esse explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam natus consequatur cumque culpa esse ea, officia veniam at quia illo id sed ipsa impedit voluptas autem ipsam nisi iste temporibus!</p>
+        <picture>      <!--já com essa linha de codigo eu mudo para outra imagem que eu tiver no meu dispositivo-->
+            <source media="(max-width: 600px)" srcset="pacote-projeto-d010/imagens/irina-blok-pq.jpg">
+            <img src="pacote-projeto-d010/imagens/irina-blok.jpg" alt="irina blok">
+        </picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius architecto in nemo culpa doloribus odit porro. Omnis nihil beatae itaque repellat veniam cumque nesciunt, distinctio doloribus odit. Voluptatem, numquam asperiores! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint numquam quos mollitia nam consectetur recusandae cum dolor, eaque fugit illum alias perspiciatis nobis necessitatibus voluptatibus quae ratione exercitationem officiis voluptate? Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic earum maiores dolores animi maxime tempora non eaque ab officiis labore, perspiciatis eum. Obcaecati expedita error adipisci quasi, quam id repellendus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque saepe iusto ea distinctio incidunt harum sapiente, recusandae neque atque cum? Voluptas consectetur eos ab, animi delectus corporis iusto maxime ad?</p>
+        <img src="pacote-projeto-d010/imagens/bugdroid.png" alt="testing">
+    </main>
+</body>
+</html>

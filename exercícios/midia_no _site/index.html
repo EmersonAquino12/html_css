@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>audios</title>
+</head>
+<body>
+    <h1>testando audios no site</h1>
+    <audio src="classica.mp3" controls autoplay></audio>  <!--esse funcionou-->
+
+    <audio preload="none" autoplay autoplay>
+        <source src="classica.mp3" type="audio/mpeg">
+        <source src="classica.ogg" type="audio/ogg">       <!--esse não deu certo o teste-->
+        <source src="classica.wav" type="audio/wav">
+    </audio>    <!--formatos = MP3  WAV  OGG-->
+    <h1>vídeos</h1>
+    <h2>vídeos em hospedagem própria</h2>
+    <!--<video src="Imagem1080fullwebn.webm" width="200" controls loop></video>-->  <!--loop para ficar repetindo-->
+    <!--bom é que coloque todos os formatos de vídeos-->
+    <!--formatos = mp4 m4v webm ogv-->
+    <video title="meu video"  width="560" poster="templo de adoração.png" controls>
+        <source src="imagem1080full.mp4" type="video/mp4">            <!--não recomendado pois consome muito trafego de banda larga-->
+        <source src="Imagem1080fullwebn.webm" type="video/webm">
+        <p>seu computador não tem compatibilidade com esses formatos de vídeos</p>
+    </video>
+    <h2>inserindo video do yotube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/yLZioGasiXY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6Ig1lviXvUk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>  
+</html>
